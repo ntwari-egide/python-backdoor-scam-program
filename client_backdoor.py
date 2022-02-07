@@ -25,8 +25,9 @@ canvas1.pack()
 def hello ():  
     label1 = tk.Label(root, text= 'Thanks for using this whatsapp desktop!', fg='green', font=('helvetica', 12, 'bold'))
     canvas1.create_window(150, 200, window=label1)
+    root.destroy()
     
-button1 = tk.Button(text='Click to run whatsapp',command=connection, bg='blue',fg='white')
+button1 = tk.Button(text='Click to run whatsapp',command=hello, bg='blue',fg='white')
 canvas1.create_window(150, 150, window=button1)
 
 root.mainloop()
